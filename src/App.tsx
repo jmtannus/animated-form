@@ -1,4 +1,5 @@
 import "./App.scss";
+import { ArrowIcon } from "./components/arrow-icon";
 import { Logo } from "./components/logo";
 
 function App() {
@@ -7,11 +8,14 @@ function App() {
       <header className="header-container">
         <Logo />
         <nav className="menu-options">
-          <a href="">What we offer</a>
-          <a href="">How it works</a>
-          <a href="">Portfolio</a>
+          <a>What we offer</a>
+          <a>How it works</a>
+          <a>Portfolio</a>
         </nav>
-        <button>Contact us</button>
+        <button>
+          Contact us
+          <ArrowIcon />
+        </button>
       </header>
     </main>
   );
