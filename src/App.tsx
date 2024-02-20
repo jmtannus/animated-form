@@ -1,18 +1,20 @@
-import './App.scss'
+import "./App.scss";
+import { Logo } from "./components/logo";
 
 function App() {
   return (
     <main>
       <header className="header-container">
-        <div className="logo-container">
-          <img src="./logo-img" />
-          <div className="logo-text"></div>
-          <span>sumerly</span>
-          <span>media</span>
-        </div>
+        <Logo />
+        <nav className="menu-options">
+          <a href="">What we offer</a>
+          <a href="">How it works</a>
+          <a href="">Portfolio</a>
+        </nav>
+        <button>Contact us</button>
       </header>
     </main>
   );
 }
 
-export default App
+export default App;
