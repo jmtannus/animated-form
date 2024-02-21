@@ -23,6 +23,7 @@ function App() {
           </div>
         </button>
       </header>
+      <div className="content-container"></div>
     </main>
   );
 }
