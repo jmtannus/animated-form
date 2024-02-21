@@ -13,8 +13,8 @@ function App() {
           <a>Portfolio</a>
         </nav>
         <button>
-          Contact us
-          <ArrowIcon />
+          <a>Contact us</a> 
+          <ArrowIcon/>
         </button>
       </header>
     </main>

@@ -1,6 +1,3 @@
-interface LogoProps {
-
-}
 export function Logo() {
       return (
         <svg width="196" height="46" viewBox="0 0 196 46" fill="none" xmlns="http://www.w3.org/2000/svg">
