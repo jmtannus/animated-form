@@ -13,8 +13,14 @@ function App() {
           <a>Portfolio</a>
         </nav>
         <button>
-          <a>Contact us</a> 
-          <ArrowIcon/>
+          <div className="btn-face-white">
+            <a>Contact us</a>
+            <ArrowIcon />
+          </div>
+          <div className="btn-face-purple">
+            <a>Contact us</a>
+            <ArrowIcon />
+          </div>
         </button>
       </header>
     </main>
