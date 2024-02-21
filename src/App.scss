@@ -18,6 +18,15 @@
   }
 }
 
+@keyframes balance {
+  0% {
+    transform: rotate(10deg);
+  }
+  100%{
+    transform: rotate(30deg);
+  }
+}
+
 main {
   min-height: 100vh;
   width: 100vw;
@@ -25,6 +34,8 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  background-color: $bg-primary;
 
   .header-container {
     display: flex;
@@ -90,6 +101,74 @@ main {
           display: flex;
           animation: appear 200ms linear 100ms forwards;
         }
+      }
+    }
+  }
+ .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
+    padding: 32px;
+
+    .heading-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 70%;
+
+      h2 {
+        font-size: 62px;
+        font-weight: 800;
+
+        &:first-of-type{
+          align-self: flex-start;
+        }
+      }
+    }
+
+
+    .bubble {
+      background:hsla(0, 0%, 100%, 0.1) ;
+      border-radius: 100%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.fire {
+        right: 20px;
+        transform: rotate(-20deg);
+        bottom: 30%;
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+      }
+      &.rocket {
+        right: 100px;
+        top: 20%;
+        font-size: 42px;
+        width: 84px;
+        height: 84px;
+      }
+      &.target {
+        left: 150px;
+        top: 10%;
+        font-size: 72px;
+        animation: balance 2000ms alternate 1000ms infinite forwards;
+        width: 120px;
+        height: 120px;
+      }
+      &.shop {
+        left: 5%;
+        transform: rotate(30deg);
+        bottom: 20%;
+        font-size: 36px;
+        width: 76px;
+        height: 76px;
       }
     }
   }
